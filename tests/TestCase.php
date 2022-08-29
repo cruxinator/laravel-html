@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Cruxinator\LaravelHtml\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -31,7 +31,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            \VendorName\Skeleton\SkeletonServiceProvider::class,
+            \Cruxinator\LaravelHtml\LaravelHtmlServiceProvider::class,
         ];
     }
 }

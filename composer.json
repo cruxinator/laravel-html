@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "cruxinator/laravel-html",
+    "description": "Html helper for Laravel",
     "keywords": [
-        ":vendor_name",
+        "cruxinator",
         "laravel",
-        ":package_slug"
+        "laravel-html"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/cruxinator/laravel-html",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Alex Goodwin",
+            "email": "cyberia.resurrection@gmail.com",
             "role": "Developer"
         }
     ],
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Cruxinator\\LaravelHtml\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Cruxinator\\LaravelHtml\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,15 +45,18 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html=cover/"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Cruxinator\\LaravelHtml\\LaravelHtmlServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelHtml": "Cruxinator\\LaravelHtml\\Facades\\LaravelHtml"
             }
         }
     },
