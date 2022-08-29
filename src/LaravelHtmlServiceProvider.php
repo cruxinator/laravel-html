@@ -5,6 +5,7 @@ namespace Cruxinator\LaravelHtml;
 use Cruxinator\Package\Package;
 use Cruxinator\Package\PackageServiceProvider;
 use Cruxinator\LaravelHtml\Commands\LaravelHtmlCommand;
+use Cruxinator\LaravelHtml\Html;
 
 class LaravelHtmlServiceProvider extends PackageServiceProvider
 {
@@ -12,9 +13,15 @@ class LaravelHtmlServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-html')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-html_table')
             ->hasCommand(LaravelHtmlCommand::class);
+    }
+
+    public function register(): self
+    {
+        parent::register();
+
+        $this->app->singleton(Html::class);
+
+        return $this;
     }
 }
