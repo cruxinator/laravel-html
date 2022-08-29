@@ -13,7 +13,8 @@ use Cruxinator\LaravelHtml\Elements\Attributes\Target;
  */
 class A extends BaseElement
 {
-    use Target, Onclick;
+    use Target;
+    use Onclick;
 
     protected $tag = 'a';
 

@@ -2,8 +2,8 @@
 
 namespace Cruxinator\LaravelHtml\Facades;
 
-use Illuminate\Support\Facades\Facade;
 use Cruxinator\LaravelHtml\Facades\Contracts\LaravelHtmlContract;
+use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Cruxinator\LaravelHtml\LaravelHtml

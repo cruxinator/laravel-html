@@ -3,14 +3,6 @@
 namespace Cruxinator\LaravelHtml;
 
 use ArrayAccess;
-use DateTimeImmutable;
-use Exception;
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
-use Illuminate\Support\HtmlString;
-use Illuminate\Support\Str;
-use Illuminate\Support\Traits\Macroable;
 use Cruxinator\LaravelHtml\Elements\A;
 use Cruxinator\LaravelHtml\Elements\Button;
 use Cruxinator\LaravelHtml\Elements\Div;
@@ -31,6 +23,14 @@ use Cruxinator\LaravelHtml\Elements\Span;
 use Cruxinator\LaravelHtml\Elements\Strong;
 use Cruxinator\LaravelHtml\Elements\Textarea;
 use Cruxinator\LaravelHtml\Elements\Ul;
+use DateTimeImmutable;
+use Exception;
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
+use Illuminate\Support\HtmlString;
+use Illuminate\Support\Str;
+use Illuminate\Support\Traits\Macroable;
 use ReflectionException;
 
 class Html
@@ -521,6 +521,7 @@ class Html
     {
         return Li::create()->children($contents);
     }
+
     /**
      * @param $contents
      * @return P
@@ -530,6 +531,7 @@ class Html
     {
         return P::create()->children($contents);
     }
+
     /**
      * @param $contents
      * @return Strong
@@ -539,6 +541,7 @@ class Html
     {
         return Strong::create()->children($contents);
     }
+
     /**
      * @param string|null $name
      *

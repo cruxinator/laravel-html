@@ -2,10 +2,9 @@
 
 namespace Cruxinator\LaravelHtml;
 
+use Cruxinator\LaravelHtml\Commands\LaravelHtmlCommand;
 use Cruxinator\Package\Package;
 use Cruxinator\Package\PackageServiceProvider;
-use Cruxinator\LaravelHtml\Commands\LaravelHtmlCommand;
-use Cruxinator\LaravelHtml\Html;
 
 class LaravelHtmlServiceProvider extends PackageServiceProvider
 {

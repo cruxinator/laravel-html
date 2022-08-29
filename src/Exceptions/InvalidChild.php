@@ -2,8 +2,8 @@
 
 namespace Cruxinator\LaravelHtml\Exceptions;
 
-use Exception;
 use Cruxinator\LaravelHtml\HtmlElement;
+use Exception;
 
 class InvalidChild extends Exception
 {

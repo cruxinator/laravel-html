@@ -4,14 +4,14 @@ namespace Cruxinator\LaravelHtml;
 
 use BadMethodCallException;
 use Closure;
+use Cruxinator\LaravelHtml\Exceptions\InvalidChild;
+use Cruxinator\LaravelHtml\Exceptions\InvalidHtml;
+use Cruxinator\LaravelHtml\Exceptions\MissingTag;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
-use Cruxinator\LaravelHtml\Exceptions\InvalidChild;
-use Cruxinator\LaravelHtml\Exceptions\InvalidHtml;
-use Cruxinator\LaravelHtml\Exceptions\MissingTag;
 
 /**
  * @method attributeIf(string|null $condition, string $attribute, string|null $value): A

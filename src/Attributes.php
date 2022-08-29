@@ -126,7 +126,7 @@ class Attributes
     /**
      * @return array
      */
-    public function toArray():array
+    public function toArray(): array
     {
         if (empty($this->classes)) {
             return $this->attributes;
@@ -138,7 +138,7 @@ class Attributes
     /**
      * @return string
      */
-    public function render():string
+    public function render(): string
     {
         if ($this->isEmpty()) {
             return '';

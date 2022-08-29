@@ -2,9 +2,9 @@
 
 namespace Cruxinator\LaravelHtml\Elements;
 
-use Illuminate\Support\Collection;
 use Cruxinator\LaravelHtml\Attributes;
 use Cruxinator\LaravelHtml\BaseElement;
+use Illuminate\Support\Collection;
 use ReflectionClass;
 use ReflectionException;
 
