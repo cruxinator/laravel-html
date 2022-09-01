@@ -15,7 +15,7 @@ class LaravelHtmlServiceProvider extends PackageServiceProvider
             ->hasCommand(LaravelHtmlCommand::class);
     }
 
-    public function register(): self
+    public function register(): PackageServiceProvider
     {
         parent::register();
 
