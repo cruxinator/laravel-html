@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Cruxinator\LaravelHtml\Tests;
-
 
 use Cruxinator\LaravelHtml\Html;
 
